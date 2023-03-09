@@ -1,14 +1,11 @@
-name: Test
+name: CICD Pipeline
 on: [push]
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: Setup Python Environment
-      uses: actions/setup-python@v1.1.1
-    - name: Run Python Script
-      run: python hello.py
+    - run: python hello.py
   build:
     needs: [test]
     runs-on: ubuntu-latest
