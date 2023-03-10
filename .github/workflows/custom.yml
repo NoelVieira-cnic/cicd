@@ -1,0 +1,8 @@
+name: Custom Workflow
+on: [push]
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: noelcv/customaction@main
