@@ -1,4 +1,4 @@
-name: Custom Workflow - Using Custom Actin
+name: Custom Workflow - Using Custom Action
 on: [push]
 jobs:
   main:
